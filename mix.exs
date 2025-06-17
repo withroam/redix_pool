@@ -10,7 +10,7 @@ defmodule RedixPool.Mixfile do
      version: @version,
      description: @description,
      package: package(),
-     elixir: "~> 1.6",
+     elixir: "~> 1.18",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps()]
@@ -44,7 +44,7 @@ defmodule RedixPool.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [{:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
-     {:redix, "~> 0.9"},
+     {:redix, "~> 1.1"},
      {:poolboy, "~> 1.5"}]
   end
 end
